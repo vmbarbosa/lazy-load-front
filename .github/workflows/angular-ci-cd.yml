@@ -32,7 +32,6 @@ jobs:
       - name: npm install and build
         run: |
           # Otorgar permisos   
-          sudo chown -R `whoami` ~/.npm
           sudo chown -R `whoami` /usr/local/lib/node_modules
           # Iniciar resolución de dependencias
           npm install -g @angular/cli
