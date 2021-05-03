@@ -31,7 +31,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: npm install and build
         run: |
-          # Otorgar permisos 
+          # Otorgar permisos   
           sudo chown -R `whoami` ~/.npm
           sudo chown -R `whoami` /usr/local/lib/node_modules
           # Iniciar resolución de dependencias
