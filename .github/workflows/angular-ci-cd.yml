@@ -35,7 +35,7 @@ jobs:
           sudo chown -R `whoami` /usr/local/lib/node_modules
           # Iniciar resolución de dependencias
           sudo npm update -g npm
-          npm rebuild node-sass -no-bin-links
-          npm install -g @angular/cli
-          npm install
+          sudo npm rebuild node-sass -no-bin-links
+          sudo npm install -g @angular/cli
+          sudo npm install
           sudo npm run build:prod
