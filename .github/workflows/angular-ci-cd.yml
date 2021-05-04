@@ -67,10 +67,15 @@ jobs:
           ls
           sudo apt-get update
           sudo apt-get install docker-ce docker-ce-cli containerd.io
+          sudo apt install docker-ce
+          sudo systemctl status docker
           sudo docker build -t my-angular-docker .
 
-      # - name: Amazon ECR "Login" Action for GitHub Actions
-      #   uses: aws-actions/amazon-ecr-login@v1
-      #   with:
-      #     registries: # optional
-      #     skip-logout: # optional
+      - name: AWS ECR
+        uses: kciter/aws-ecr-action@v3
+        with:
+          access_key_id: ASIASQCUKOWRJ6ACWQUW
+          secret_access_key: cFNChld1yB+I9Fm2M1Z41M2yDVaXttI7W+i8b7Ha
+          account_id: 171975538082
+          repo: 171975538082.dkr.ecr.us-east-1.amazonaws.com/lazy_load
+          region: us-east-1
