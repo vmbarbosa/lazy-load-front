@@ -37,9 +37,13 @@ jobs:
           sudo npm install
           sudo ng build --prod
           ls
+          pwd
+          cd dist
+          pwd
+          ls
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.3
         with:
           name: Build_Angular
-          path: /dist
+          path: dist
