@@ -59,3 +59,15 @@ jobs:
         with:
           name: Build_Angular
           path: dist
+      
+      # Runs a set of commands using the runners shell
+      - name: npm install and build
+        run: |
+          pwd
+          ls
+
+      # - name: Amazon ECR "Login" Action for GitHub Actions
+      #   uses: aws-actions/amazon-ecr-login@v1
+      #   with:
+      #     registries: # optional
+      #     skip-logout: # optional
