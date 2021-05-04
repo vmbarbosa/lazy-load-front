@@ -69,7 +69,6 @@ jobs:
           sudo apt-get install docker-ce docker-ce-cli containerd.io
           sudo apt install docker-ce
           sudo systemctl status docker
-          sudo docker build -t my-angular-docker .
 
       - name: AWS ECR
         uses: kciter/aws-ecr-action@v3
