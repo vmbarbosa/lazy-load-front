@@ -60,7 +60,7 @@ jobs:
           name: Build_Angular
           path: dist
       
-      # Runs a set of commands using the runners shell
+      # Runs a set of commands using the runners shell 
       - name: npm install and build
         run: |
           pwd
